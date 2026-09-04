@@ -1,0 +1,13 @@
+[package]
+name = "pith"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+description = "Morphs an instrument's timbre toward a pure sine wave by cutting low-amplitude FFT bins."
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+nih_plug = { git = "https://github.com/robbert-vdh/nih-plug.git", rev = "f36931f7af4646065488a9845d8f8c2f95252c23" }
+realfft = "3.0"
